@@ -1,0 +1,138 @@
+
+.home-block {
+    display: inline-block;
+    width: 100%;
+}
+
+.column {
+    width: 49%;
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gray {
+    background-color:#999999;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.contact {
+    background: #342d98;
+}
+
+.vertical-column {
+    width: 24%;
+    display: inline-block;
+    height: 350px;
+    position: relative;
+}
+
+.gblock {
+    background: purple;
+    height: 540px;
+    position:relative;
+}
+
+#half-logo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.brand-block {
+    display: inline-block;
+    margin: 1%;
+}
+
+.column-text-block {
+    position: absolute;
+    bottom: 0;
+}
+
+.column-title {
+    color: purple;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.brands {
+    margin: auto;
+    text-align: center;
+}
+
+.round-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.column-block {
+    width: 100%;
+    height: 350px;
+    top: 0px;
+    position: absolute;
+}
+
+#company-block {
+    position: relative;
+    margin-left: 40%;
+}
+
+#company-block span {
+    width: 100%;
+}
+
+#first_line {
+    color: grey;
+}
+
+#middle_line {
+    
+}
+
+#last_line {
+
+}
+
+.home-block .column {
+    vertical-align: top;
+}
+
+.main-header-bar {
+	border-bottom-width: 0px;
+}
+
+.site-branding {
+    width: 49.9%;
+    background-color: purple;
+}
+
+.ast-container {
+    padding-left: 0px;
+}
+
+#text-block {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.lines {
+    font-size: 50px;
+    line-height: 1;
+}
+
+h2.white {
+    margin: 15%;
+    color: white !important;
+}
+
+#half-logo {
+
+}
