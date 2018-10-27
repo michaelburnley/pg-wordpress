@@ -1,20 +1,103 @@
+@font-face {
+    font-family: "Adelle-Regular";
+    src: url("wp-admin/css/fonts/Adelle-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Adelle-Bold";
+    src: url("wp-admin/css/fonts/Adelle-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AKKURAT-Mono";
+    src: url("wp-admin/css/fonts/AKKURAT-Mono.OTF") format("opentype");
+}
+
+@font-face {
+    font-family: "AkkuratLightPro-Regular";
+    src: url("wp-admin/css/fonts/AkkuratLightPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AkkuratPro-Bold";
+    src: url("wp-admin/css/fonts/AkkuratPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AkkuratPro-Regular";
+    src: url("wp-admin/css/fonts/AkkuratPro-Regular.otf") format("opentype");
+}
+
+body {
+    font-family: "Adelle-Regular";
+}
 
 .home-block {
     display: inline-block;
     width: 100%;
+    position: relative;
+}
+
+.custom-logo {
+    width: 105px;
+}
+
+#row-divider {
+    width: 25%;
+    height: 125px;
+    background: #3333c9;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    right: 0;
+    color: white;
+    margin-right: 1%;
 }
 
 .column {
     width: 49%;
     display: inline-block;
+    position: relative;
+}
+
+#contact-block {
+}
+
+.ast-container {
+    max-width: 100%;
 }
 
 .bold {
     font-weight: bold;
 }
 
+#header-divider {
+    background: #3333c9;
+    width: 25%;
+    height: 100px;
+}
+
+.main-navigation {
+    height: 18px;
+}
+
+header .site-logo-img .custom-logo-link img {
+    max-width: 105px;
+}
+
+p {
+    display: none;
+}
+
+#content {
+    margin: auto;
+}
+
 .gray {
-    background-color:#999999;
+    background-color:#e2e2e2;
     color: white;
 }
 
@@ -23,24 +106,95 @@
 }
 
 .contact {
-    background: #342d98;
+    background: #3333cc;
+}
+
+#vertical-column-container {
+    width: 83%;
+    height: 400px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.divider-block {
+    width: 100%;
+    height: 254px;
+}
+
+#brand_tile_wrapper {
+    opacity: 1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: opacity 2s;
+}
+
+footer {
+    display: none;
+}
+
+#brand-large-image {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 2s;
+}
+
+.vertical-divider {
+    width: 8%;
+    display: inline-block;
+    height: 400px;
 }
 
 .vertical-column {
     width: 24%;
     display: inline-block;
-    height: 350px;
     position: relative;
+    vertical-align: top;
+    text-align: left;
+}
+
+.main-header-menu .menu-item {
+    font-size: 18px;
+}
+
+.ast-main-header-bar-alignment {
+    margin-right: 5%;
+}
+
+.main-header-bar {
+    z-index: 4;
+    position: relative;
+    line-height: 3;
 }
 
 .gblock {
-    background: purple;
-    height: 540px;
+    background: #3333c9;
+    height: 450px;
+    width: 25%;
     position:relative;
 }
 
+#contacts {
+
+}
+
+.company-text-block {
+    width: 67%;
+    height: 575px;
+    position: absolute;
+    vertical-align: unset !important;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.half-size {
+    height: 100px;
+    margin-bottom: 10%;
+}
+
 #half-logo {
-    width: 100%;
     position: absolute;
     bottom: 0;
 }
@@ -48,17 +202,26 @@
 .brand-block {
     display: inline-block;
     margin: 1%;
+    cursor: pointer;
+    width: 381px;
 }
 
 .column-text-block {
-    position: absolute;
+    /* position: relative;
     bottom: 0;
+    margin-top: 10%;
+    margin-left: 24%; */
+    color: black; 
 }
 
 .column-title {
-    color: purple;
-    font-size: 30px;
-    line-height: 1;
+    color: #3333c9;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 5%;
+    margin-top: 50px;
+    font-family: "AkkuratPro-Regular";
 }
 
 .brands {
@@ -67,8 +230,6 @@
 }
 
 .round-wrapper {
-    width: 100%;
-    text-align: center;
     margin: auto;
     position: relative;
 }
@@ -76,13 +237,13 @@
 .column-block {
     width: 100%;
     height: 350px;
-    top: 0px;
-    position: absolute;
 }
 
 #company-block {
     position: relative;
-    margin-left: 40%;
+    width: 100%;
+    height: 290px;
+    font-family: "AkkuratPro-Regular";
 }
 
 #company-block span {
@@ -90,15 +251,25 @@
 }
 
 #first_line {
-    color: grey;
+    color: #c7c7c7;
 }
 
 #middle_line {
-    
+    font-weight: bold;
 }
 
 #last_line {
+    color: #454545;
+}
 
+#new-block {
+    position: absolute;
+    height: 400px;
+    width: 50%;
+    left: 0;
+    vertical-align: middle;
+    margin: auto;
+    right: 0;
 }
 
 .home-block .column {
@@ -106,33 +277,207 @@
 }
 
 .main-header-bar {
-	border-bottom-width: 0px;
+    border-bottom-width: 0px;
+    font-family: "AkkuratPro-Regular";
+}
+
+.contact-info {
+    font-size: 21px;
+}
+
+.contact-title {
+    font-size: 26px;
+    font-family: "AkkuratPro-Regular";
+}
+
+.contact-info a {
+    color: white !important;
 }
 
 .site-branding {
-    width: 49.9%;
-    background-color: purple;
+    width: 25%;
+    background-color: #3333c9;
+}
+
+.ast-site-identity {
+    padding: 1em 0;
+    margin-left: 10%;
 }
 
 .ast-container {
     padding-left: 0px;
+    padding-right: 0px;
 }
 
 #text-block {
-    margin-left: 20%;
-    margin-right: 20%;
+    position: relative;
+    bottom: 0;
+    font-size: 20px;
+    width: 70%;
 }
 
 .lines {
-    font-size: 50px;
+    font-size: 90px;
     line-height: 1;
+    text-align: left;
 }
 
-h2.white {
-    margin: 15%;
-    color: white !important;
+.white {
+    color: white !important;    
 }
 
 #half-logo {
 
+}
+
+#content-block {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top
+}
+
+#divider {
+    border: 5px solid grey;
+    width: 17%;
+    bottom: 0;
+    margin: 20px 0px 20px 0px;
+}
+
+#contact-text {
+    line-height: 0.5;
+    font-size: 91px;
+    font-family: "AkkuratPro-Regular";
+}
+
+#contact-header {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .site-branding {
+        width: 100%;
+    }
+
+    .ast-button-wrap {
+        display: none;
+    }
+
+    .ast-container {
+        padding-right: initial;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .gblock {
+        position: relative;
+    }
+
+    .company-text-block {
+        position: absolute;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        color: white;
+        vertical-align: middle;
+    }
+
+    .company-text-block {
+        height: initial;
+    }
+
+    #new-block {
+        width: 70%;
+        position: absolute;
+        height: initial;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        vertical-align: middle;
+        margin: auto;
+        right: 0;    }
+
+    #row-divider {
+        display: none;
+    }
+
+    .divider-block {
+        display: none;
+    }
+
+    .row-divider {
+        display: none;
+    }
+
+    .vertical-column {
+        width: 100%;
+    }
+
+    .column-text-block {
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+        color: black;
+    }
+
+    .contact-info {
+        font-size: 17px;
+        line-height: 1;
+    }
+
+    #vertical-column-container {
+        width: 100%;
+        vertical-align: top;
+        display: inline-block;
+        height: initial;
+    }
+
+    #header-divider {
+        display: none;
+    }
+
+    .lines {
+        font-size: 58px;
+        line-height: 1;
+        text-align: left;
+    }
+
+    #text-block {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        font-size: 15px;
+    }
+    
+    .vertical-divider {
+        display: none;
+    }
+
+    #company-block {
+        position: relative;
+        width: 100%;
+        height: initial;
+        font-family: "AkkuratPro-Regular";
+    }
+    #content-block {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .column-title {
+        margin: auto;
+    }
+
+    .round-wrapper {
+        text-align: center;
+    }
+
+    .brand-block {
+        width: 100%;
+        margin: auto;
+    }
 }
