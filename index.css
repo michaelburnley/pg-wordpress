@@ -28,6 +28,17 @@
     src: url("wp-admin/css/fonts/AkkuratPro-Regular.otf") format("opentype");
 }
 
+#brand-large-image-wrapper {
+    display: inline-block;
+    width: 75%;
+}
+
+#brand-text-column {
+    display: inline-block;
+    width: 24%;
+    background: red;
+}
+
 body {
     font-family: "Adelle-Regular";
 }
@@ -97,7 +108,7 @@ p {
 }
 
 .gray {
-    background-color:#e2e2e2;
+    background-color:#272525;
     color: white;
 }
 
@@ -137,6 +148,7 @@ footer {
     opacity: 0;
     left: 0;
     right: 0;
+    z-index: -1;
     transition: opacity 2s;
 }
 
@@ -216,7 +228,7 @@ footer {
 
 .column-title {
     color: #3333c9;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.4;
     margin-bottom: 5%;
@@ -278,7 +290,7 @@ footer {
 
 .main-header-bar {
     border-bottom-width: 0px;
-    font-family: "AkkuratPro-Regular";
+    font-family: "Adelle-Regular";
 }
 
 .contact-info {

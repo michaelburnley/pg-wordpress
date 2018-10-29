@@ -81,8 +81,14 @@
     </div>
     <div class="home-block brands" id="ourwork">
         <div id="brand-large-image">
-            <img src="" />
-            <div id="close">X</div>
+            <div id="brand-large-image-wrapper">
+                <img src="" />
+                <div id="close">X</div>
+            </div>
+            <div id="brand-text-column">
+                <span id="brand-name">Boley</span>
+                <div id="brand-information">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et massa nec enim pharetra molestie et in risus. In condimentum varius erat, eu tristique ex. Vivamus mauris mi, congue bibendum lacus quis, rutrum tempor ex. Suspendisse finibus volutpat nunc, sed laoreet augue fermentum vitae. Nam commodo, velit a dictum ultrices, justo sem pretium mauris, eu suscipit nisl est vel ante. Nam laoreet ligula eros, in tristique libero luctus et. Nullam dictum viverra velit ac dictum. Aliquam purus dolor, bibendum id leo eget, molestie convallis felis. Aliquam fringilla neque et rhoncus tincidunt. Fusce semper at ipsum posuere consequat. Morbi vehicula aliquam justo, sit amet sodales libero commodo non.</div>
+            </div>
         </div>
         <div id="brand_tile_wrapper">
             <div class="row">
@@ -157,13 +163,15 @@
         const blocks = document.getElementsByClassName('brand-block');
         const brands_block = document.getElementById('brand_tile_wrapper');
         const brand_large = document.getElementById('brand-large-image');
+        const brand_large_image = document.getElementById('brand-large-image-wrapper');
         const close_button = document.getElementById('close');
         const openBrandView = (e) => {
-            brand_large.children[0].src = e.target.dataset.gallery;
+            brand_large_image.children[0].src = e.target.dataset.gallery;
             brands_block.style.opacity = '0';
             brands_block.style.visibility = 'hidden';
             brand_large.style.visibility = 'visible';
             brand_large.style.opacity = '1';
+            brand_large.style.zIndex = '1';
         }
         const closeBrandView = () => {
             brands_block.style.visibility = 'visible';
@@ -171,6 +179,7 @@
             brand_large.style.opacity = '0';
             brands_block.style.opacity = '1';
             brand_large.children[0].src = "";
+            brand_large.style.zIndex = '-1';
         }
         // Adding event listeners
         for (var block of blocks) {
