@@ -28,15 +28,30 @@
     src: url("wp-admin/css/fonts/AkkuratPro-Regular.otf") format("opentype");
 }
 
+.brand-image {
+    display: none;
+}
+
+.brand-name {
+    display: none;
+}
+.brand-information  {
+    display: none;
+}
+
 #brand-large-image-wrapper {
     display: inline-block;
     width: 75%;
+    position: absolute;
+    left: 0;
 }
 
 #brand-text-column {
     display: inline-block;
     width: 24%;
     background: red;
+    position: absolute;
+    right: 0;
 }
 
 body {
@@ -75,8 +90,8 @@ body {
 }
 
 #contact-block {
+    height: 1024px;
 }
-
 .ast-container {
     max-width: 100%;
 }
@@ -144,7 +159,7 @@ footer {
 }
 
 #brand-large-image {
-    position: absolute;
+    position: relative;
     opacity: 0;
     left: 0;
     right: 0;
@@ -215,7 +230,7 @@ footer {
     display: inline-block;
     margin: 1%;
     cursor: pointer;
-    width: 381px;
+    width: 335px;
 }
 
 .column-text-block {
