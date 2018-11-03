@@ -32,26 +32,28 @@
     display: none;
 }
 
+br {
+    display: none;
+}
+
 .brand-name {
     display: none;
+    font-size: 28px;
 }
 .brand-information  {
     display: none;
 }
 
 #brand-large-image-wrapper {
-    display: inline-block;
     width: 75%;
-    position: absolute;
-    left: 0;
+    display: inline-block;
 }
 
 #brand-text-column {
-    display: inline-block;
     width: 24%;
-    background: red;
-    position: absolute;
-    right: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 body {
@@ -79,7 +81,7 @@ body {
     top: 0;
     font-size: 30px;
     right: 0;
-    color: white;
+    color: black;
     margin-right: 1%;
 }
 
@@ -154,15 +156,22 @@ p {
     transition: opacity 2s;
 }
 
+#brand-clock-container {
+    position: absolute;
+    top: 25%;
+    margin: 0% 10% 0% 10%;
+}
+
 footer {
     display: none;
 }
 
 #brand-large-image {
-    position: relative;
+    position: absolute;
     opacity: 0;
-    left: 0;
-    right: 0;
+    margin: auto;
+    height: 1024px;
+    display: inline-block;
     z-index: -1;
     transition: opacity 2s;
 }
@@ -202,8 +211,8 @@ footer {
     position:relative;
 }
 
-#contacts {
-
+.row {
+    text-align: center;
 }
 
 .company-text-block {
@@ -253,7 +262,7 @@ footer {
 
 .brands {
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .round-wrapper {
